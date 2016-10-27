@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{font-weight:100;font-size:12px;}
+ul,ol,li{list-style:none;}
+a,u{text-decoration:none;}
+i,em{font-style:normal;}
+b,strong{font-weight:100;}
+img{display:block;border:0}
+body,html{width:100%}
+img{cursor:pointer;}
+.mainCon{width:1210px;margin:0 auto;font-size:12px;}
+/*top*/
+#top{width:100%;height:30px;background:#f6f6f6;border-bottom:1px solid #ededed}
+#top .mainCon{height:21px;padding-top:9px;}
+#top .left,.cent,.right{float:left;color:#656565}
+#top .left a,.right a{color:#656565;float:left;padding:0 8px;border-right:1px solid #dcdcdc}
+#top .left{width:210px;}
+#top .left a:hover{color:#c82324}
+#top .cent{width:400px;padding-left:300px}
+#top .cent a:hover{text-decoration:underline ;color:#c82324}
+#top .cent a{color:#000}
+#top .right{width:262px;float:right;}
+#top .right a:hover{text-decoration:underline ;color:#c82324}
+/*logo*/
+#logo{width:100%;height:90px;}
+#logo .mainCon{height:90px;overflow:hidden}
+#logo h1,h2,h3,.cent,.right img{float:left;}
+#logo h1{width:160px;margin-top:17px;background:url(../images/logox.png) no-repeat right;margin-right:16px;}
+#logo h2{margin-right:24px;margin-top:17px}
+#logo h3{margin-right:15px;margin-top:17px}
+#logo .cent form{height:37px;margin-top:17px}
+#logo .cent input{border:0;width:415px;height:31px;border:3px solid #c82324;display:block;float:left;}
+#logo .cent form a{display:block;width:78px;height:37px;background:#c82324;float:left;color:#fcfcfc;text-align:center;line-height:37px;font-size:14px;font-weight:900;}
+#logo .cent p{color:#989898;margin-top:6px;height:12px;}
+#logo .cent p a{color:#333333;}
+#logo .cent p a:hover{text-decoration:underline;}
+#logo .cent p .wb{color:#e2373a}
+#logo .right{height:90px;float:right;width:243px;}
+#logo .right .ewm{margin:0 0 0 8px;float:left}
+#logo .right .gwc{margin-top:15px;float:right;width:126px;padding:0}
+/*nav*/
+#nav{width:100%;height:37px;background:#f6f6f6;border-top:1px solid #ededed;position:relative;}
+#nav .mainCon{height:37px}
+#nav  li{float:left;margin-right:36px;height:37px}
+#nav li a{color:#323232;text-align:center;line-height:38px;font-weight:900;}
+#nav .red a:hover{color:#c82324;text-decoration: underline;}
+#nav .all{position:absolute;top:-1px}
+#nav .all a{width:193px;background:#c82324;display:block;color:#fff;text-align:left;padding-left:17px;}
+#nav .comm a{color:#c82324}
+#nav .comm a:hover{color:#c82324;text-decoration: underline;}
+#nav .lineServ{float:right;margin:0;width:85px;background:url(../images/navx.png) no-repeat right}
+
+
+
+
+
+
+
+
+
+
+
+/*links*/
+#links{width:100%;height:140px;}
+#links .mainCon{height:140px;background:url(../images/linksx.png) repeat-x ;overflow: hidden;}
+#links ul{float:left;width:156px;border-left:1px dashed #c9c9c9;margin-top:28px;padding-left:13px}
+#links ul li{margin-bottom:7px}
+#links ul ._img{margin: 0;}
+#links ul .first_li{font-weight:900;margin-bottom: 13px;}
+#links ul li a{color:#000000}
+#links ul li a:hover{color:#c82324;text-decoration: underline;}
+/*bottom*/
+#bottom{width:100%;height:87px;}
+#bottom .mainCon{height:87px;text-align: center;padding-top:18px;color:#999999;}
+#bottom a{color:#000}
+#bottom a:hover{text-decoration:underline;}
+/*fixed*/
+#fixed{height:30px;position:fixed;bottom:0;width:100%;background:#000000;opacity:0.8;z-index:0}
+#fixed .mainCon{height:30px;position: relative;}
+#fixed .mainCon .imgs{position:absolute;right:0;top:4px;z-index:1;}
+#fixed .mainCon img{float:left;margin-left:8px;cursor: pointer;}
+/*online*/
+.online{height:190px;width:154px;background:#a4a5a5;border:1px solid #8a8a8a;border-radius:5px;font-size:12px;position:absolute;top:35%;right:0}
+.online .top{height:22px;}
+.online .top img{float:left;}
+.online .top .ig{float: right;}
+.online ul{height:160px;width:142px;background:#fff;border:1px solid #666666;margin-left:4px;}
+.online .time{background:#e1e1e1;padding-left:23px;color:#1e8fbb;height:22px}
+.online ul li{height:22px;line-height:22px;padding-left:7px;}
+.online ul .tell{color:#9d5946}
+.online ul .commt{padding-left:23px;background:url(../images/xiaoren.gif) no-repeat 7px center;color:#aca9a8}
+.online ul .commt a{color:#51b400}
+
+

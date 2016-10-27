@@ -1,0 +1,69 @@
+/* ie 6/7 */
+.clearfix{
+	*zoom : 1;
+	*height: 1px;
+}
+/* IE8+ */
+.clearfix:after{
+	content: "";
+	height: 0;
+	clear: both;
+	display: block;
+	visibility: hidden;
+}
+#list{width:100%;min-height: 2000px;height:auto importance!;height:2000px}
+#list .mainCon{min-height: 2000px;height:auto importance!;height:2000px}
+a{color: #000}
+
+
+
+
+#banner{position:absolute;z-index: 99}
+#banner .mainCon {width: 712px;margin-left: 26px;}
+#banner li{background: #fff}
+#choose .lis{margin-left: 27px;width: 186px;float: left;border: 1px solid #fff0f1;margin-top: 5px}
+#choose .lis h1 {border-top: 2px solid #f00;}
+#choose .lis h1 a{padding-bottom: 8px;padding-left: 16px;padding-right: 16px;display: block;background: #fff0f1;height: 18px;color: #aa0009;font-size:15px;font-weight: bold;padding-top:8px;}  
+#choose .lis h1 a:hover{background:#ffdcdc}   
+#choose .lis dl dt a{ display: block;font-size: 15px;padding: 5px 16px;}
+#choose .lis dl dt a:hover{  background: #fafafa none repeat scroll 0 0;color: #333;text-decoration: none;}
+#choose .lis dl dd{background: url(../images/dian.jpg) no-repeat 10px;margin-left: 15px;}
+#choose .lis dl dd a{   display: block;padding: 5px 24px;font-size: 12px;}
+#choose .lis dl dd a:hover{  background: #fafafa none repeat scroll 0 0;color: #333;text-decoration: none;}
+
+
+
+#list .list_right{width:980px;float:right;overflow: hidden;}
+#list .list_right #lists{position:absolute;top:123px;left:323px;height:36px;width:500px;margin-right:36px;float:left;background: #f6f6f6;}
+#list .list_right #lists li{margin-right:33px;float:left;height:37px;font-weight: 900;line-height: 37px;;}
+#list .list_right #lists .cancel{display:}
+#list .list_right #lists li:hover{text-decoration: underline;color:#c82324;cursor: pointer;}
+#list .list_right #product{width:100%;margin-top: 20px;}
+#list .list_right #product li{margin-top:8px;;height:330px;width:176px;float:left;padding-right:20px;border-bottom: 1px solid #DFDFDF;}
+#list .list_right #product li img .list{display:inline-block;width:174px;height:174px;}
+#list .list_right #product li p{height:35px;line-height: 20px;}
+#list .list_right #product li span{font-size: 12px;color:#aa0009;font-weight: 900;margin:10px 0 ;}
+#list .list_right #product li i{color:#ff6600;}
+#list .list_right #product a{color:#000}
+#list .list_right #product a p:hover{color:#0000FF;text-decoration: underline;}
+
+#list .mainCon .choose {margin-top: 5px; border-color: #ffeaea;border-radius: 0 0 2px 2px;border-style: none solid solid;border-width: 0 1px 1px;min-height: 1px; width: auto;}
+#list .mainCon .choose .num{ background: #fff0f1 none repeat scroll 0 0;color: #aa0009;display: block;font-family: "微软雅黑","Microsoft YaHei";font-size: 15px;font-weight: bold;height: 18px;padding: 8px 16px;}
+#list .mainCon .choose dl{clear: both;overflow: hidden;padding-left: 68px;position: relative;padding-top: 10px}
+#list .mainCon .choose dl dt{ left: 0;padding: 10px 0 3px 8px;position: absolute;top: 0;}
+#list .mainCon .choose dl  dd .one{background: #aa0009 none repeat scroll 0 0;color: #fff;}
+#list .mainCon .choose dl  dd{  float: left;padding: 0 1px 1px 0;}
+#list .mainCon .choose dl dd a{border-radius: 2px;display: block;float: left;padding: 2px 8px;white-space: nowrap;font-size: 13px;color: #c75709} 
+#list .mainCon .choose dl dd a:hover{    background: #d0000b;color: #fff;text-decoration: none;}
+#list .mainCon .choose dl dd  .one:hover{background: #aa0009}
+#list .mainCon .choose .pai{margin-top: 5px; border-color: #ffeaea;border-radius: 0 0 2px 2px;border-style: solid none none;border-width:  1px;min-height: 1px; width: auto;}
+#list .mainCon .choose .pai dl dd .one{ background: #fff0f1 none repeat scroll 0 0;border-color: #ccc;border-radius: 2px;border-style: solid;border-width: 1px;font-family: Tahoma;margin-right: 8px;margin-bottom: 7px;padding: 2px 8px;color: #aa0009;}
+#list .mainCon .choose .pai dl dd a{color: #000; background: #f2f2f2 none repeat scroll 0 0;border-color: #ccc;border-radius: 2px;border-style: solid;border-width: 1px;font-family: Tahoma;margin-right: 8px;padding: 2px 8px;}
+#list .mainCon .choose .pai dl dd a:hover{background: #ccc;}
+
+
+
+
+
+
+

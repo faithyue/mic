@@ -1,0 +1,1090 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>刘旭</title>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<link rel ="stylesheet" type = "text/css" href = "css/index.css">
+<script type="text/javascript">
+	$(function(){
+		function getCookies(){
+				var arr = [];
+				if(arguments.length == 1) {
+					return getCookie(arguments[0]);
+				}
+				for(var i in arguments){
+					var p = arguments[i];
+					var res = getCookie(p);
+					if(res != null){
+						arr.push(res);
+					}
+				}
+				return arr;
+			}
+			function getCookie(key){
+				var str_cookie = document.cookie;
+				var list = str_cookie.split("; ");
+				for(var i in list){
+					var kvs = list[i].split("=");
+					if(kvs[0] == key) {
+						return kvs[1];
+					}
+				}
+				return null;				
+			}
+		$("#your").width("200")
+		$("#your").html("您好，");
+		$("#your").append("<a href = '#'></a>");	
+		$("#your").find("a").eq(0).css({"color":"#000"}).html(getCookies("username"));
+		$("#your").append("<a href = '#'></a>");
+		$("#your").find("a").eq(1).css({"color":"#000","margin-left":"10px"}).html("退出");
+		$("#user_phone").html(getCookies("username"));
+		$("#your").find("a").eq(1).attr("href","index.html");
+		
+	})
+</script>
+</head>
+
+<body>
+<!--top-->
+<div id = "top">
+	<div class="mainCon">
+    	<div class="left">
+        	<a href = "#">电视直播</a>
+            <a href = "#">电子型录</a>
+            <a href = "#">购物专家</a>
+        </div>
+       <!-- <marquee class="cent" behdvior = "scroll" direction = "left" scrollamount = "2">
+        	<p>您好，欢迎来到宜家商场！[<a href="#">注册</a>]	[<a href="#">登录</a>]</p>
+        </marquee> -->
+        <div class="cent" >
+        	<p id="your">
+        		您好，欢迎来到宜家商场！
+        		[<a href="dengluzhuce.html">注册</a>]
+        		[<a href="dengluzhuce.html">登录</a>]
+        	</p>
+        </div
+        <div class="right">
+        	<a href = "#">我的订单</a>
+            <a href = "#">商场积分</a>
+            <a href = "#">帮助中心</a>
+            <a href = "#">收藏中心</a>
+        </div>    
+    </div>
+</div>
+<!--logo-->
+<div id = "logo">
+    <div class="mainCon">
+        <h1><img src = "images/logo.png" alt="logo"></h1>
+        <h2><img src = "images/logo1.png" alt="logo"></h2>
+        <h3><img src = "images/logo2.png" alt="logo"></h3>
+        <div class="cent">
+            <form methd = "" action="">
+                <input type="text" placeholder="搜索关键字">
+                <a href ="#">搜索</a>
+            </form>
+            <p>
+                热门搜索
+                <a class="wb" href = "#">腕表</a>
+                <a href = "#">床品</a>
+                <a href = "#">面包机</a>
+                <a href = "#">砂锅</a>
+                <a href = "#">套组</a>
+            </p>
+        </div>
+        <div class="right">
+            <img class="ewm" src = "images/erweima.png" alt ="" />
+            <a class="gwc" href = "#"><img  src = "images/gwc.png" alt ="" /></a>
+        </div>
+    </div>
+</div>
+<!--nav-->
+<div id = "nav">
+    	<ul class="mainCon">
+        	<li class = "all"><a href = "#">全部商品分类</a></li>
+            <li class="red index"><a href = "index.html">首 页</a></li>
+            <li class="red"><a href = "list.html">家居百货</a></li>
+            <li class="red"><a href = "list.html">3C数码</a></li>
+            <li class="red"><a href = "list.html">精品家电</a></li>
+            <li class="red"><a href = "list.html">时尚生活</a></li>
+            <li class="red"><a href = "list.html">宜家旅行</a></li>
+            <li class="comm red"><a href = "list.html">限时秒杀</a></li>
+            <li class="comm red"><a href = "list.html">汽车房产</a></li>
+            <li class="lineServ comm red"><a href = "#">在线客服</a></li>
+        </ul>
+</div>
+<!--banner-->
+<div id="banner">
+	<div class="mainCon">
+    	<ul class="left">
+        	<li class="bignav"><a href ="#">家居百货</a></li>
+            <li class="show" style="display:block">
+            	<ul class="smallnav" >
+                	<li class="small"><span>礼赠佳品</span> -奢侈品</li>
+                    <li class="small"><span>家居用品</span> <i>-实木家居-其它-家居</i></li>
+                    <li class="small"><span>礼赠佳品</span> -奢侈品</li>
+                    <li class="small"><span>礼赠佳品</span> -实木家居-其它-家居</li>
+                    <li class="small"><span>礼赠佳品</span> -实木家居-其它-家居</li>
+                    <li class="small"><span>礼赠佳品</span> -奢侈品</li>
+                    <li class="small"><span>礼赠佳品</span> -实木家居-其它-家居</li>
+                </ul>
+            </li>
+            <li class="bignav"><a href ="#">3C数码</a></li>
+             <li class="show">
+            	<ul class="smallnav">
+                	<li class="small"><span>礼赠佳品</span> -奢侈品</li>
+                    <li class="small"><span>家居用品</span> -实木家居-其它-家居</li>
+                    <li class="small"><span>礼赠佳品</span> -奢侈品</li>
+                    <li class="small"><span>礼赠佳品</span> -奢侈品</li>
+                    <li class="small"><span>礼赠佳品</span> -奢侈品</li>
+                    <li class="small"><span>礼赠佳品</span> -奢侈品</li>
+                    <li class="small"><span>礼赠佳品</span> -奢侈品</li>
+                </ul>
+            </li>
+            <li class="bignav"><a href ="#">精品家电</a></li>
+            <li class="show">
+            	<ul class="smallnav">
+                	<li class="small"><span>礼赠佳品</span> -奢侈品</li>
+                    <li class="small"><span>家居用品</span> -实木家居-其它-家居</li>
+                    <li class="small"><span>礼赠佳品</span> -奢侈品</li>
+                    <li class="small"><span>礼赠佳品</span> -奢侈品</li>
+                </ul>
+            </li>
+        
+            <li class="bignav"><a href ="#">时尚生活</a></li>
+            <li class="show">
+            	<ul class="smallnav">
+                	<li class="small"><span>礼赠佳品</span> -奢侈品</li>
+                    <li class="small"><span>家居用品</span> -实木家居-其它-家居</li>
+                    <li class="small"><span>礼赠佳品</span> -奢侈品</li>
+                    <li class="small"><span>礼赠佳品</span> -奢侈品</li>
+                </ul>
+            </li>
+            <li class="bignav"><a href ="#">宜家旅游</a></li>
+             <li class="show">
+            	<ul class="smallnav">
+                	<li class="small"><span>礼赠佳品</span> -奢侈品</li>
+                </ul>
+            </li>
+            <li class="last bignav">点击上面文字查看商品分类</li>
+        </ul>
+    	<!--中间的banner-->
+    	<div class="center">
+        	<div class="up">
+        		<ul class="lb">
+        			<li><img src="images/banner1.jpg" alt= "" /></li>
+        			<li><img src="images/banner2.jpg" alt= "" /></li>
+        			<li><img src="images/banner3.jpg" alt= "" /></li>
+
+        		</ul>
+        		<ul class="nav">
+        			<li  class="navBg">1</li>
+        			<li>2</li>
+        			<li>3</li>
+
+        		</ul>
+        	</div>
+        	<div class="down">
+        		<ul class="smallLb">
+        			<li><img src ="images/s4.jpg" /></li> 
+        			<li><img src ="images/s1.jpg" /></li>
+        			<li><img src ="images/s2.jpg" /></li>
+        			<li><img src ="images/s3.jpg" /></li>
+        			<li><img src ="images/s4.jpg" /></li>
+        			<li><img src ="images/s1.jpg" /></li>
+        			<li><img src ="images/s2.jpg" /></li>
+        			<li><img src ="images/s3.jpg" /></li>
+        			<li><img src ="images/s4.jpg" /></li>   
+        			<li><img src ="images/s1.jpg" /></li>
+        		</ul>
+        		<div class="btn">
+	        		<div class="lefti btt" data-number="1"><img src = "images/left.gif" /></div>
+	        		<div class="righti btt" data-number="-1"><img src = "images/right.gif" /></div>
+	        	</div>
+        	</div>       	
+        </div>
+       <!--	 右边-->
+    	<div class="right">
+        	<div class="video">
+        		<div class="up">视频直播商品<a class="more" href ="#">更多>></a></div>
+        		<img class="img" src="images/video.png" alt ="" />
+        		<ul class="down">
+        			<li>老班章金芽古树宫廷普洱茶<br />（紫砂典藏版）</li>
+        			<li>￥998<span>（积分9.98）</span></li>
+        			<li class="time">时间：11:30-12:00</li>
+        		</ul>
+        	</div>
+        	<p class="ad" ><img src = "images/gg.png"  /></p>
+        	<ul class="rightDown">
+        		<li class="scgg">商城公告<a class="more" href="#">更多>></a></li>
+        			<li><span>[公告]</span> 微信摇电视通知!</li>
+        		<li><span>[公告]</span> 周年庆公告</li>
+        	</ul>
+        </div>
+        <div class="towNavs">
+	        <ul class="towNav">
+	        	<li><a href="#">其它 1</a></li>
+	        	<li><a href="#">卫浴 晾晒</a></li>
+	        	<li><a href="#">家居护理 </a></li>
+	        	<li><a href="#">综合 </a></li>
+	        	<li><a href="#">半斤类 </a></li>
+	        	<li><a href="#">家居清洁 </a></li>
+	        	<li><a href="#">整理收纳 </a></li>
+	        	<li><a href="#">很多>> </a></li>
+	        </ul>
+	         <ul class="towNav">
+	        	<li><a href="#">其它 2</a></li>
+	        	<li><a href="#">卫浴 晾晒</a></li>
+	        	<li><a href="#">家居护理 </a></li>
+	        	<li><a href="#">综合 </a></li>
+	        	<li><a href="#">半斤类 </a></li>
+	        	<li><a href="#">家居清洁 </a></li>
+	        	<li><a href="#">整理收纳 </a></li>
+	        	<li><a href="#">很多>> </a></li>
+	        </ul>
+	         <ul class="towNav">
+	        	<li><a href="#">其它3 </a></li>
+	        	<li><a href="#">卫浴 晾晒</a></li>
+	        	<li><a href="#">家居护理 </a></li>
+	        	<li><a href="#">综合 </a></li>
+	        	<li><a href="#">半斤类 </a></li>
+	        	<li><a href="#">家居清洁 </a></li>
+	        	<li><a href="#">整理收纳 </a></li>
+	        	<li><a href="#">很多>> </a></li>
+	        </ul>
+	         <ul class="towNav">
+	        	<li><a href="#">其它4 </a></li>
+	        	<li><a href="#">卫浴 晾晒</a></li>
+	        	<li><a href="#">家居护理 </a></li>
+	        	<li><a href="#">综合 </a></li>
+	        	<li><a href="#">半斤类 </a></li>
+	        	<li><a href="#">家居清洁 </a></li>
+	        	<li><a href="#">整理收纳 </a></li>
+	        	<li><a href="#">很多>> </a></li>
+	        </ul>
+	         <ul class="towNav">
+	        	<li><a href="#">其它 5</a></li>
+	        	<li><a href="#">卫浴 晾晒</a></li>
+	        	<li><a href="#">家居护理 </a></li>
+	        	<li><a href="#">综合 </a></li>
+	        	<li><a href="#">半斤类 </a></li>
+	        	<li><a href="#">家居清洁 </a></li>
+	        	<li><a href="#">整理收纳 </a></li>
+	        	<li><a href="#">很多>> </a></li>
+	        </ul>
+	         <ul class="towNav">
+	        	<li><a href="#">其它6 </a></li>
+	        	<li><a href="#">卫浴 晾晒</a></li>
+	        	<li><a href="#">家居护理 </a></li>
+	        	<li><a href="#">综合 </a></li>
+	        	<li><a href="#">半斤类 </a></li>
+	        	<li><a href="#">家居清洁 </a></li>
+	        	<li><a href="#">整理收纳 </a></li>
+	        	<li><a href="#">很多>> </a></li>
+	        </ul>
+	         <ul class="towNav">
+	        	<li><a href="#">其它 7</a></li>
+	        	<li><a href="#">卫浴 晾晒</a></li>
+	        	<li><a href="#">家居护理 </a></li>
+	        	<li><a href="#">综合 </a></li>
+	        	<li><a href="#">半斤类 </a></li>
+	        	<li><a href="#">家居清洁 </a></li>
+	        	<li><a href="#">整理收纳 </a></li>
+	        	<li><a href="#">很多>> </a></li>
+	        </ul>
+        </div>
+    </div>
+</div>
+<!--goods-->
+<div id="goods">
+	<div class="mainCon">
+		<div class="left">
+			<ul class="goodsNav">
+				<li class="hovers"><a href = "#">直播商品</a></li>
+				<li><a href = "#">热卖商品</a></li>
+				<li><a href = "#">特惠商品</a></li>
+				<li><a href = "#">商城专区</a></li>
+			</ul>
+			<ul class="live lives">
+				<li>
+					<img src = "images/live1.jpg" alt= "" />
+					<p><a href = "#">*（商城专供）阿拉丁 牛肉白菜（仅支持支付宝）</a></p>
+					<span>宜佳价：</span><i>￥33</i>
+				</li>
+				<li>
+					<img src = "images/live2.jpg" alt= "" />
+					<p><a href = "#">*（商城专供）阿拉丁 牛肉白菜（仅支持支付宝）</a></p>
+					<span>宜佳价：</span><i>￥33</i>
+				</li>
+				<li>
+					<img src = "images/live3.jpg" alt= "" />
+					<p><a href = "#">*（商城专供）阿拉丁 牛肉白菜（仅支持支付宝）</a></p>
+					<span>宜佳价：</span><i>￥33</i>
+				</li>
+				<li>
+					<img src = "images/live4.jpg" alt= "" />
+					<p><a href = "#">*（商城专供）阿拉丁 牛肉白菜（仅支持支付宝）</a></p>
+					<span>宜佳价：</span><i>￥33</i>
+				</li>
+				<li>
+					<img src = "images/live5.jpg" alt= "" />
+					<p><a href = "#">*（商城专供）阿拉丁 牛肉白菜（仅支持支付宝）</a></p>
+					<span>宜佳价：</span><i>￥33</i>
+				</li>
+			</ul>
+			<ul class="live">
+				<li>
+					<img src = "images/live6.jpg" alt= "" />
+					<p><a href = "#">*（商城专供）阿拉丁 牛肉白菜（仅支持支付宝）</a></p>
+					<span>宜佳价：</span><i>￥33</i>
+				</li>
+				<li>
+					<img src = "images/live7.jpg" alt= "" />
+					<p><a href = "#">*（商城专供）阿拉丁 牛肉白菜（仅支持支付宝）</a></p>
+					<span>宜佳价：</span><i>￥33</i>
+				</li>
+				<li>
+					<img src = "images/live8.jpg" alt= "" />
+					<p><a href = "#">*（商城专供）阿拉丁 牛肉白菜（仅支持支付宝）</a></p>
+					<span>宜佳价：</span><i>￥33</i>
+				</li>
+				<li>
+					<img src = "images/live9.jpg" alt= "" />
+					<p><a href = "#">*（商城专供）阿拉丁 牛肉白菜（仅支持支付宝）</a></p>
+					<span>宜佳价：</span><i>￥33</i>
+				</li>
+				<li>
+					<img src = "images/live10.jpg" alt= "" />
+					<p><a href = "#">*（商城专供）阿拉丁 牛肉白菜（仅支持支付宝）</a></p>
+					<span>宜佳价：</span><i>￥33</i>
+				</li>
+			</ul>
+			<ul class="live">
+				<li>
+					<img src = "images/live1.jpg" alt= "" />
+					<p><a href = "#">*（商城专供）阿拉丁 牛肉白菜（仅支持支付宝）</a></p>
+					<span>宜佳价：</span><i>￥33</i>
+				</li>
+				<li>
+					<img src = "images/live2.jpg" alt= "" />
+					<p><a href = "#">*（商城专供）阿拉丁 牛肉白菜（仅支持支付宝）</a></p>
+					<span>宜佳价：</span><i>￥33</i>
+				</li>
+				<li>
+					<img src = "images/live3.jpg" alt= "" />
+					<p><a href = "#">*（商城专供）阿拉丁 牛肉白菜（仅支持支付宝）</a></p>
+					<span>宜佳价：</span><i>￥33</i>
+				</li>
+				<li>
+					<img src = "images/live4.jpg" alt= "" />
+					<p><a href = "#">*（商城专供）阿拉丁 牛肉白菜（仅支持支付宝）</a></p>
+					<span>宜佳价：</span><i>￥33</i>
+				</li>
+				<li>
+					<img src = "images/live5.jpg" alt= "" />
+					<p><a href = "#">*（商城专供）阿拉丁 牛肉白菜（仅支持支付宝）</a></p>
+					<span>宜佳价：</span><i>￥33</i>
+				</li>
+			</ul>
+			<ul class="live">
+				<li>
+					<img src = "images/live6.jpg" alt= "" />
+					<p><a href = "#">*（商城专供）阿拉丁 牛肉白菜（仅支持支付宝）</a></p>
+					<span>宜佳价：</span><i>￥33</i>
+				</li>
+				<li>
+					<img src = "images/live7.jpg" alt= "" />
+					<p><a href = "#">*（商城专供）阿拉丁 牛肉白菜（仅支持支付宝）</a></p>
+					<span>宜佳价：</span><i>￥33</i>
+				</li>
+				<li>
+					<img src = "images/live8.jpg" alt= "" />
+					<p><a href = "#">*（商城专供）阿拉丁 牛肉白菜（仅支持支付宝）</a></p>
+					<span>宜佳价：</span><i>￥33</i>
+				</li>
+				<li>
+					<img src = "images/live9.jpg" alt= "" />
+					<p><a href = "#">*（商城专供）阿拉丁 牛肉白菜（仅支持支付宝）</a></p>
+					<span>宜佳价：</span><i>￥33</i>
+				</li>
+				<li>
+					<img src = "images/live10.jpg" alt= "" />
+					<p><a href = "#">*（商城专供）阿拉丁 牛肉白菜（仅支持支付宝）</a></p>
+					<span>宜佳价：</span><i>￥33</i>
+				</li>
+			</ul>
+		</div>
+		<div class="goods-right">
+			<div class="up">限时秒杀<a href="#">更多>></a></div>
+			<div class="down">
+			<img src="images/f1.jpg" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+<!--cheap-->
+<div id="cheap">
+	<div class="mainCon">
+		<div class="cheap_left">
+			<div class="up">尾品会特价</div>
+			<ul class="down">
+				<li>
+					<img src = "images/tejia1.jpg">
+					<p><a href = "#">*（商城专供）阿拉丁 牛肉白菜（仅支持支付宝）</a></p>
+					<span>宜佳价：</span><i>￥33</i>
+				</li>
+				<li>
+					<img src = "images/tejia2.jpg">
+					<p><a href = "#">*（商城专供）阿拉丁 牛肉白菜（仅支持支付宝）</a></p>
+					<span>宜佳价：</span><i>￥33</i>
+				</li>
+				<li>
+					<img src = "images/tejia3.jpg">
+					<p><a href = "#">*（商城专供）阿拉丁 牛肉白菜（仅支持支付宝）</a></p>
+					<span>宜佳价：</span><i>￥33</i>
+				</li>
+				<li>
+					<img src = "images/tejia4.jpg">
+					<p><a href = "#">*（商城专供）阿拉丁 牛肉白菜（仅支持支付宝）</a></p>
+					<span>宜佳价：</span><i>￥33</i>
+				</li>
+				<li>
+					<img src = "images/tejia5.jpg">
+					<p><a href = "#">*（商城专供）阿拉丁 牛肉白菜（仅支持支付宝）</a></p>
+					<span>宜佳价：</span><i>￥33</i>
+				</li>
+			</ul>
+		</div>
+		<div class="cheap_right">
+			<div class="top">
+				<div class="query">订单查询</div>
+				<div class="inp">
+					<p>请在输入框中输入您的订单号</p>
+					<form>
+						<input type = "text" value ="" name="inp" />
+						<img src = "images/in_cx.jpg" alt="" />
+					</form>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="rec">主持人微博推荐商品<a href = "#">更多>></a></div>
+				<div class="ly">
+					<img src = "images/yy.png" />
+					<p>
+						澳大利亚-新西兰12日<br>精品深度游<br>
+						<span>抢购价</span><i>￥15890</i>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--1fappliance-->
+<div id = "appliance">
+	<div class="mainCon">
+		<div class="a_left">
+			<div class="one_f">
+				<div class="top">1F 精品家电</div>
+				<div class="bottom">
+					<h2>热门品牌</h2>
+					<a href="#">康怡乐</a><a href="#">康怡乐</a><a href="#">康怡乐</a><a href="#">康怡乐</a><a href="#">康怡乐</a><a href="#">康怡乐</a><a href="#">康怡乐</a>
+					<a href="#">康怡乐</a><a href="#">康怡乐</a><a href="#">康怡乐</a><a href="#">康怡乐</a><a href="#">康怡乐</a><a href="#">康怡乐</a><a href="#">康怡乐</a>
+					<a href="#">康怡乐</a>
+				</div>
+			</div>
+			<img src="images/guo.png" alt ="" />
+		</div>
+		<div class="a_right">
+			<div class="top">
+				<span>精品家电</span>
+				<a href="#">更多>></a>
+			</div>
+			<div class="bottom">
+				<ul>
+					<li class="first">
+						<img src = "images/guo1.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li >
+						<img src = "images/guo2.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/guo3.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/guo4.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/guo5.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+				</ul>
+				<ul>
+					<li class="first">
+						<img src = "images/guo1.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li >
+						<img src = "images/guo2.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/guo3.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/guo4.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/guo5.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!--2Fhome-->
+<div id = "appliance">
+	<div class="mainCon">
+		<div class="a_left">
+			<div class="one_f">
+				<div class="top home">2F 家居百货</div>
+				<div class="bottom home_2f">
+					<h2>热门品牌</h2>
+					<a href="#">德莱贝尔</a><a href="#">熙恩妍</a><a href="#">韩国TONDO</a><a href="#">德莱贝尔</a><a href="#">熙恩妍</a><a href="#">韩国TONDO</a>
+				</div>
+				<img src = "images/home.png"  />
+			</div>
+			
+		</div>
+		<div class="a_right">
+			<div class="top">
+				<span>精品家居</span>
+				<a href="#">更多>></a>
+			</div>
+			<div class="bottom">
+				<ul>
+					<li class="first">
+						<img src = "images/home1.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li >
+						<img src = "images/home2.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/home3.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/home4.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/home5.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+				</ul>
+				<ul>
+					<li class="first">
+						<img src = "images/home1.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li >
+						<img src = "images/home2.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/home3.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/home4.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/home5.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!--treasure-->
+<div id = "treasure">
+	<ul class="mainCon">
+		<li class="first"><img src = "images/bw1.png" alt =""/></li>
+		<li><img src = "images/bw2.png" alt =""/></li>
+		<li><img src = "images/bw3.png" alt =""/></li>
+		<li><img src = "images/bw4.png" alt =""/></li>
+		<li><img src = "images/bw2.png" alt =""/></li>
+		<li><img src = "images/bw3.png" alt =""/></li>
+	</ul>
+</div>
+<!--3Ffashion-->
+<div id = "appliance">
+	<div class="mainCon">
+		<div class="a_left">
+			<div class="one_f">
+				<div class="top home3">3F 时尚生活</div>
+				<div class="bottom home_3f">
+					<h2>热门品牌</h2>
+					<a href="#">韩束</a><a href="#">Skinlady槿兰</a><a href="#">韩国兰芝 </a><a href="#">CellsClini希琳妮</a><a href="#">婷美</a><a href="#">瑞士三度士</a>
+					<a href="#">韩束</a><a href="#">Skinlady槿兰</a><a href="#">韩国兰芝 </a><a href="#">CellsClini希琳妮</a><a href="#">婷美</a><a href="#">瑞士三度士</a>
+				</div>
+				
+			</div>
+			
+		</div>
+		<div class="a_right">
+			<ul class="top fashion">
+				<li class="active">美容美发</li>
+				<li>珠宝首饰</li>
+				<li>服饰箱包</li>
+				<li>手表</li>
+				<a href="#">更多>></a>
+			</ul>
+			<div class="bottom hide show  bott">
+				<ul>
+					<li class="first">
+						<img src = "images/hzp1.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li >
+						<img src = "images/hzp2.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/hzp3.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/hzp4.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/hzp5.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+				</ul>
+				<ul>
+					<li class="first">
+						<img src = "images/hzp1.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li >
+						<img src = "images/hzp2.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/hzp3.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/hzp4.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/hzp5.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+				</ul>
+			</div>
+			<div class="bottom hide bott">
+				<ul>
+					<li class="first">
+						<img src = "images/baio1.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li >
+						<img src = "images/baio2.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/baio3.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/baio4.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/baio5.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+				</ul>
+				<ul>
+					<li class="first">
+						<img src = "images/baio1.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li >
+						<img src = "images/baio2.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/baio3.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/baio4.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/baio5.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+				</ul>
+			</div>
+			<div class="bottom hide bott">
+				<ul>
+					<li class="first">
+						<img src = "images/hzp1.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li >
+						<img src = "images/hzp2.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/hzp3.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/hzp4.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/hzp5.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+				</ul>
+				<ul>
+					<li class="first">
+						<img src = "images/hzp1.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li >
+						<img src = "images/hzp2.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/hzp3.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/hzp4.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/hzp5.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+				</ul>
+			</div>
+			<div class="bottom hide bott">
+				<ul>
+					<li class="first">
+						<img src = "images/baio1.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li >
+						<img src = "images/baio2.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/baio3.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/baio4.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/baio5.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+				</ul>
+				<ul>
+					<li class="first">
+						<img src = "images/baio1.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li >
+						<img src = "images/baio2.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/baio3.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/baio4.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/baio5.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!--4flive-->
+<div id = "appliance">
+	<div class="mainCon">
+		<div class="a_left">
+			<div class="one_f">
+				<div class="top live">4F 生活家电</div>
+				<div class="bottom live_4f">
+					<h2>热门品牌</h2>
+					<a href="#">东芝 </a><a href="#">小鸭 </a><a href="#">海斯曼 </a><a href="#">达米尼 </a><a href="#">澳柯玛 </a><a href="#">现代</a>
+					<a href="#">申花 </a><a href="#">挂烫机 </a>
+				</div>
+			</div>
+			
+		</div>
+		<div class="a_right">
+			<div class="top">
+				<span>生活家电</span>
+				<a href="#">更多>></a>
+			</div>
+			<div class="bottom">
+				<ul>
+					<li class="first">
+						<img src = "images/tv1.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li >
+						<img src = "images/tv2.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/tv3.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/tv4.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/tv5.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+				</ul>
+				<ul>
+					<li class="first">
+						<img src = "images/tv1.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li >
+						<img src = "images/tv2.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/tv3.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/tv4.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+					<li>
+						<img src = "images/tv5.jpg" alt="" />
+						<p><a href = "#">CLARA无油空气炸锅宜佳价</a></p>
+						<span>宜佳价：</span>  <i>￥358</i>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!--links-->
+<div id="links">
+	<div class="mainCon">
+		<ul>
+			<li class="first_li">购物指南</li>
+			<li><a href="#">购物流程</a></li>
+			<li><a href = "#">常见问题</a></li>
+			<li><a href = "#">订单状态</a></li>
+			<li><a href ="#">会员介绍</a></li>
+		</ul>
+		<ul>
+			<li class="first_li">配送方式</li>
+			<li><a href="#">购物流程</a></li>
+			<li><a href = "#">常见问题</a></li>
+			<li><a href = "#">订单状态</a></li>
+			<li><a href ="#">会员介绍</a></li>
+		</ul>
+		<ul>
+			<li class="first_li">支付方式</li>
+			<li><a href="#">购物流程</a></li>
+			<li><a href = "#">常见问题</a></li>
+			<li><a href = "#">订单状态</a></li>
+			<li><a href ="#">会员介绍</a></li>
+		</ul>
+		<ul>
+			<li class="first_li">售后服务</li>
+			<li><a href="#">购物流程</a></li>
+			<li><a href = "#">常见问题</a></li>
+			<li><a href = "#">订单状态</a></li>
+			<li><a href ="#">会员介绍</a></li>
+		</ul>
+		<ul>
+			<li class="first_li">客服中心</li>
+			<li><a href="#">购物流程</a></li>
+			<li><a href = "#">常见问题</a></li>
+			<li><a href = "#">订单状态</a></li>
+			<li><a href ="#">会员介绍</a></li>
+		</ul>
+		<ul>
+			<li class="first_li">关于我们</li>
+			<li><a href="#">购物流程</a></li>
+			<li><a href = "#">常见问题</a></li>
+			<li><a href = "#">订单状态</a></li>
+			<li><a href ="#">会员介绍</a></li>
+		</ul>
+		<ul>
+			<li class="_img"><a href = "#"><img src="images/xinlao.gif" alt ="" /></a></li>
+			<li><img src = "images/phone.gif" alt =""/></li>
+		</ul>
+	</div>
+</div>
+<!--honor-->
+<div id="honor">
+	<div class="mainCon">
+		<img src = "images/honor.png" alt = "" />
+	</div>
+</div>
+<!--bottom-->
+<div id="bottom">
+	<div class="mainCon">
+		<p>本站域名：<a href = "#"> www.yjgo.com.cn</a> | 地址：辽宁省沈阳市和平区文化路79号</p>
+		<p>&copy 2005-2013 辽宁宜佳电视购物有限公司 版权所有，并保留所有权利。 </p>
+		<p>辽ICP备12015716号-2 </p>
+		<p>Tel:400-688-8499 | 招商热线：23186680 23186681 | 团购热线：23181390 | 售后热线：400-688-6611</p>
+	</div>
+</div>
+<!--fixed-->
+<div id="fixed">
+	<div class="mainCon">
+		<div class="imgs">
+			<img src ="images/in_wdjf.gif" alt= "" />
+			<img src ="images/in_wddd.gif" alt= "" />
+			<img src ="images/in_wdgwd.gif" alt= "" />
+			<img src ="images/in_wyyw.gif" alt= "" />
+			<img class="_top" src ="images/new_in_top.gif" alt= ""/>
+		</div>
+	</div>
+</div>
+<!--online-->
+<div class="online">
+       <!--<div class="c_o">
+		<img src ="images/close.png" />
+	</div>-->
+	<div class="_all">
+		<div class="top">
+			<img src="images/online.png" alt ="" />
+			<img class="ig" src = "images/close.png"  />
+		</div>
+		<ul>
+			<li class="time">早9:00-晚21:00</li>
+			<li class="tell">电话:4006888499 </li>
+			<li class="commt"><span>商城客服1</span>[<a href ="#">留言</a>]</li>
+			<li class="commt"><span>商城客服2</span>[<a href ="#">留言</a>]</li>
+			<li class="commt"><span>商城客服3</span>[<a href ="#">留言</a>]</li>
+			<li class="commt"><span>商城客服4</span>[<a href ="#">留言</a>]</li>
+		</ul>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

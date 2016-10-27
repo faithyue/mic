@@ -1,0 +1,84 @@
+#kanc{width:100%;height:438px;margin-top:11px;}
+#kanc .mainCon{height:438px}
+#kanc .kanc_top{width:97%;height:15px;display:inline-block;padding-left:30px;background:url(../images/kans.png) no-repeat left center;}
+#kanc .kanc_top a{float:left;color:#b5b5b5;width:58px;background:url(../images/kans1.png) no-repeat kan_right center;margin-kan_right:5px;}
+#kanc .kanc_top a:hover{color:#3DACEA;text-decoration: underline;}
+#kanc .kanc_top span{float:right}
+#kanc .kanc_price{height:422px;}
+#kanc .kanc_price .kan_left{width:335px;height:422px;margin-top:5px;float: left;}
+#kanc .kanc_price .kan_left .main{height:350px;width:332px;border:1px solid #ffeaea;}
+#kanc .kanc_price .kan_left .main img{display: none;;height:100%;width:100%}
+#kanc .kanc_price .kan_left .main .show_img{display: block;}
+#kanc .kanc_price .kan_left ul{height:55px}
+#kanc .kanc_price .kan_left ul li{float:left;height:50px;width:50px;margin:10px 10px 0 0;}
+#kanc .kanc_price .kan_left ul li:hover{border:1px solid #aa0009;height:48px;width:48px}
+#kanc .kanc_price .kan_left ul li img{width:100%;height:100%;display:inline-block}
+#kanc .kanc_price .kan_right{width:848px;height:433px;float:left;margin:9px 0 0 14px}
+#kanc .kanc_price .kan_right ul{width:848px;height: 433px;}
+#kanc .kanc_price .kan_right .p1{display:inline-block;font-size:16px;color:#000000;font-weight: 900;}
+#kanc .kanc_price .kan_right ul li span{color:#999}
+#kanc .kanc_price .kan_right ul li b{color:#ff6600}
+#kanc .kanc_price .kan_right ul li i{color:#aa0009;font-size:16px;font-weight: 900;}
+#kanc .kanc_price .kan_right .li1{height:47px;border-top:1px solid #ffeaea;border-bottom:1px solid #ffeaea;background: url(../images/han.png) repeat-x;padding-top:13px;}
+#kanc .kanc_price .kan_right .li2{height:38px;padding-top:17px;}
+#kanc .kanc_price .kan_right .li3{height:43px;padding:8px 0 0 34px;width:558px;border: 1px solid #e3ceb2;padding-top:16px;background: url(../images/zeng.png) no-repeat left top;}
+#kanc .kanc_price .kan_right .li4{height:52px;padding-top:8px;width:355px;border-top:1px solid #ffeaea;margin-top:28px;}
+#kanc .kanc_price .kan_right .li5{height:97px;padding-top:8px;width:602px;border-top:1px solid #ffeaea;line-height:18px;}
+#kanc .kanc_price .kan_right .li5 input{border:;width:25px;height: 16px;background:#e6e6e6;text-align: center;}
+#kanc .kanc_price .kan_right .li6{height:36px;width:536px;}
+#kanc .kanc_price .kan_right .li6 a,.help,.line_phone{float:left}
+#kanc .kanc_price .kan_right .li6 .cen{margin:0 8px;}
+#kanc .kanc_price .kan_right .li6 .line_phone{margin-right:8px;}
+#kanc .kanc_price .kan_right .li6 .line_phone .line{font-size:14px;font-weight: 900;color: #000;}
+#kanc .kanc_price .kan_right .help{height:33px;width:179px;border: 1px solid #c5c5c5;border-radius:4px;}
+#kanc .kanc_price .kan_right .help a{border-right:1px solid #c5c5c5;}
+#kanc .kanc_price .kan_right .help .kong_x{width:35px;height:33px;background:url(../images/kongxin.png);}
+#kanc .kanc_price .kan_right .help .kong_x:hover{background:url(../images/shixing.png) ;}
+html{position: relative;}
+#big{height:900px;width:100%;background:rgba(0,0,0,0);position: absolute;top:0;left:0;display: none;}
+#big .main{width:505px;height:563px;position: absolute;left:35%;top:20%;opacity: 1;display: none;}
+#big .main .imge{width:1100px;height:100%;position: relative;}
+#big .main .imge li{width:505px;height:563px;position: absolute;top:0;z-index:0}
+#big .main .imge li img{display:inline-block;width:100%;height:100%;border-radius:10px;display: none;z-index:0}
+#big .main .im_left{position: absolute;left:0;top:0;z-index: 1;}
+#big .main .im_left1{position: absolute;left:0;top:0;z-indx:0;}
+#big .main .im_right{position: absolute;right:0;top:0}
+#big .main .imge .chu{z-index: 1;}
+/*product_detail*/
+#product_detail{width:100%;min-height:1000px;height:auto importance!;height:1000}
+
+#product_detail .mainCon{min-height:1000px;height:auto importance!;height:1000;}
+#product_detail .pro_left{float:left;width:188px;}
+#product_detail .pro_left .top{border:1px solid #ffeaea;border-top:2px solid #ed969a}
+#product_detail .pro_left .pro_top{width:186px;height:110px;background: #fff0f1;color:#b10009;overflow: hidden;}
+#product_detail .pro_left .pro_top a{color:#d75e63;font-size:12px;margin-bottom:7px;}
+#product_detail .pro_left .pro_top a:hover{text-decoration: underline;}
+#product_detail .pro_left .pro_top .comm{font-size:14px;}
+#product_detail .pro_left .pro_top p{margin:11px 0 0 17px;font-size: 12px;}
+#product_detail .pro_left .pr_img{height:68px;width:170px;border-bottom:1px solid #fafafa;margin-left: 8px;margin-top:10px}
+#product_detail .pro_left .pr_img img{float:left}
+#product_detail .pro_left .pr_img p{float:left;color:#aa0009;width:111px;margin-left: 9px;}
+#product_detail .pro_left .pr_img p a{color:#000000}
+#product_detail .pro_left .pr_img p a:hover{text-decoration: underline;color:blue}
+#product_detail .pro_left .p_bottom{border:1px solid #ffeaea;border-top:2px solid #ed969a;margin-top:8px}
+#product_detail .pro_left .p_bottom .b_top{width:171px;height:24px;padding:10px 0 0 15px;font-size:14px;background: #fff0f1;}
+#product_detail .pro_left .p_bottom a{color:#d75e63;font-size:12px;margin-bottom:7px;}
+#product_detail .pro_left .p_bottom .pr_img{height:68px;width:170px;border-bottom:1px solid #fafafa;margin-left: 8px;margin-top:10px}
+#product_detail .pro_left .p_bottom .pr_img img{float:left}
+#product_detail .pro_left .p_bottom .pr_img p{float:left;color:#aa0009;width:111px;margin-left: 9px;}
+#product_detail .pro_left .p_bottom .pr_img p a{color:#000000}
+#product_detail .pro_left .p_bottom .pr_img p a:hover{text-decoration: underline;color:blue}
+#product_detail .pro_right{margin-top:16px ;position:relative;float:left;width:1004px;margin-left: 7px;}
+#product_detail .pro_right .proright_top{height: 101px;border:1px solid #DFDFDF;border-right:0;padding:25px 0 0 15px;line-height: 19px;)}
+#product_detail .pro_right .proright_top span{color:#ff5700}
+
+#product_detail .pro_right .p_nav{width:509px;height:30px;border-bottom:2px solid #000;margin-top:8px;}
+#product_detail .pro_right .p_nav li{z-index:10;padding:0 12px;border-right:1px solid #fff;float: left;background:url(../images/bgg.png);height:30px;line-height: 30px;}
+#product_detail .pro_right .p_nav li:hover{background:#333333;color:#fff}
+#product_detail .pro_right .describe{z-index:0;line-height: 20px;border:1px solid #DFDFDF;border-top:2px solid #000;}
+
+
+
+
+
+
